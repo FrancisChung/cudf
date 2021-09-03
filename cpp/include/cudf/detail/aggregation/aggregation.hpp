@@ -767,7 +767,7 @@ class udf_aggregation final : public rolling_aggregation {
       _output_type{output_type}
   {
     CUDF_EXPECTS(type == aggregation::PTX or type == aggregation::CUDA,
-                 "udf_aggregation can accept only PTX, CUDA");
+                 "udf_aggregation can accept only PTX, CUDA_VER");
   }
 
   bool is_equal(aggregation const& _other) const override
